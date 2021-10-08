@@ -1,0 +1,39 @@
+<form [formGroup]="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">namerestaurante</label>
+    <input formControlName="namerestaurante" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">nit</label>
+    <input formControlName="nit" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">local</label>
+    <input formControlName="local" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">adress</label>
+    <input formControlName="adress" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">phone</label>
+    <input formControlName="phone" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">email</label>
+    <input formControlName="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">password</label>
+    <input formControlName="password" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">role</label>
+    <input formControlName="role" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+
+
+  <button (click)="create()" type="submit" class="btn btn-warning">Crear</button>
+  <button (click)="edit()" type="submit" class="btn btn-warning">editar</button>
+
+</form>

@@ -1,0 +1,22 @@
+<app-navbar [listaDeCompra]="listaDeCompra"></app-navbar>
+<div class="d-flex justify-content-center mt-5">
+  <button (click)="createMenu()" type="button" class="btn btn-outline-info">
+    Crear Menu
+  </button>
+</div>
+<div class="container">
+
+  <div *ngIf="menus.length" class="row">
+    <app-cards (menuSeleccionado)=agregarMenu($event) [menu]="menu" *ngFor="let menu of menus"></app-cards>
+ 
+  </div>
+  <div class=" d-flex justify-content-center mt-5">
+    <div *ngIf="listaDeCompra.length" class="row">
+      <button (click)="irAlCarrito()" type="button" class="btn btn-outline-info" >Ir a pagar</button>
+    </div>
+  </div>
+
+ 
+</div>
+<app-footer></app-footer>
+
